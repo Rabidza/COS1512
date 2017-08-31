@@ -1,0 +1,52 @@
+#################  
+## C++  
+#################  
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+#################  
+## Code::Blocks  
+#################  
+
+*.depend  
+*.layout  
+
+#################  
+## Assignments
+## I'm ignoring assignments until the results have been released  
+#################  
+Assignments/Assignment2
+Assignments/Assignment1/60559241_COS1512_01.docx
+Assignments/Assignment1/60559241_COS1512_01.pdf
+Assignments/Assignment1/Assignment1ProofOfSubmission.png
