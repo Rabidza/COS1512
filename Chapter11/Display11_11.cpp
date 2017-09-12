@@ -3,7 +3,11 @@
 //Note that you use (max_size), not [max_size]
 //StringVar the_object(max_size);
 //where max_size is the longest string length allowed.
+//NH -- Added implemntation of StringVar class from Display 11.12
 #include <iostream>
+#include <cstdlib>
+#include <cstddef>
+#include <cstring>
 using namespace std;
 
 class StringVar
@@ -61,45 +65,56 @@ int main()
     return 0;
 }
 
-StringVar::StringVar(int size)
+//Uses cstddef and cstdlib:
+StringVar::StringVar(int size) : max_length(size)
 {
-    //TODO
+    value = new char[max_length + 1]; //+1 is for '\0'.
+    value[0] = '\0';
 }
 
-StringVar::StringVar()
+//Uses cstddef and cstdlib:
+StringVar::StringVar() : max_length(100)
 {
-    //TODO:
+    value = new char[max_length + 1]; //+1 is for '\0'.
+    value[0] = '\0';
 }
 
-StringVar::StringVar(const char a[])
+//Uses cstring, cstddef, and cstdlib:
+StringVar::StringVar(const char a[]) : max_length(strlen(a))
 {
-    //TODO:
+    value = new char[max_length + 1]; //+1 is for '\0'.
+    strcpy(value, a);
 }
 
-StringVar::StringVar(const StringVar& string_object)
+//Uses cstring, cstdedef, and cstdlib:
+StringVar::StringVar(const StringVar& string_object) : max_length(string_object.length())
 {
-    //TODO:
+    value = new char[max_length + 1]; //+1 is for '\0'.
+    strcpy(value, string_object.value);
 }
 
 StringVar::~StringVar()
 {
-    //TODO:
+    delete [] value;
 }
 
+//Uses cstring:
 int StringVar::length() const
 {
-    //TODO
-    return 0;
+    return strlen(value);
 }
 
+//Uses iostream:
 void StringVar::input_line(istream& ins)
 {
-    //TODO:
+    ins.getline(value, max_length + 1);
 }
 
+//Uses iostream:
 ostream& operator <<(ostream& outs, const StringVar& the_string)
 {
-    //TODO:
+    outs << the_string.value;
+    return outs;
 }
 
 //This is only a demonstration function:
