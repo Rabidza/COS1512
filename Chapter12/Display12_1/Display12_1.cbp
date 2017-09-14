@@ -34,7 +34,7 @@
 		</Compiler>
 		<Unit filename="dtime.cpp" />
 		<Unit filename="dtime.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="timedemo.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
