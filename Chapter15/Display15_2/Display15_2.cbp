@@ -34,10 +34,7 @@
 		</Compiler>
 		<Unit filename="employee.cpp" />
 		<Unit filename="employee.h" />
-		<Unit filename="hourlyemployee.cpp" />
-		<Unit filename="hourlyemployee.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="salariedemployee.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
