@@ -45,13 +45,13 @@ namespace employeessavitch
         set_net_pay(hours * wage_rate);
 
         cout << "\n_____________________________________________\n";
-        cout << "Pay to the order of " << get_name( ) << endl;
-        cout << "The sum of " << get_net_pay( ) << " Dollars\n";
+        cout << "Pay to the order of " << get_name() << endl;
+        cout << "The sum of " << get_net_pay() << " Dollars\n";
         cout << "_____________________________________________\n";
         cout << "Check Stub: NOT NEGOTIABLE\n";
-        cout << "Employee Number: " << get_ssn( ) << endl;
+        cout << "Employee Number: " << get_ssn() << endl;
         cout << "Hourly Employee. \nHours worked: " << hours
-        << " Rate: " << wage_rate << " Pay: " << get_net_pay( ) << endl;
+        << " Rate: " << wage_rate << " Pay: " << get_net_pay() << endl;
         cout << "_____________________________________________\n";
     }
 }//employeessavitch
