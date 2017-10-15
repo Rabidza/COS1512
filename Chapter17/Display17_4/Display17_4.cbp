@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="genericlist.cpp" />
 		<Unit filename="genericlist.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
